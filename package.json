@@ -1,0 +1,32 @@
+{
+  "name": "fake-data-generator",
+  "version": "0.0.1",
+  "description": "Fake data gerator",
+  "main": "index.js",
+  "scripts": {
+    "commit": "cz",
+    "release": "standard-version",
+    "test": "mocha --timeout 5000 './{,!(node_modules)/**/}*.test.js' --exit"
+  },
+  "keywords": [],
+  "author": "maku",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.7.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-prettier": "^4.0.0",
+    "mocha": "^9.1.4",
+    "prettier": "^2.5.1",
+    "standard-version": "^9.3.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
