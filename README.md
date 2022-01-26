@@ -1,10 +1,14 @@
-## Introduction
+# Fake data generator
 
-**Fake Data Generator** is a simple JavaScript tool to generate fake data useful for testing.
+[![npm version](https://img.shields.io/npm/v/fake-data-generator.svg?style=flat-square)](https://www.npmjs.org/package/fake-data-generator) [![npm downloads](https://img.shields.io/npm/dm/fake-data-generator.svg?style=flat-square)](http://npm-stat.com/charts.html?package=fake-data-generator)
+
+Simple JavaScript tool to generate fake data useful for testing.
 
 <blockquote >This project is still a WIP</blockquote>
 
 ### Installation
+
+Using npm:
 
 ```bash
 npm install fake-data-generator
@@ -13,11 +17,10 @@ npm install fake-data-generator
 ### Usage
 
 ```js
-const DataFaker = require('fake-data-generator');
-const faker = new DataFaker();
+const dataFaker = require('fake-data-generator');
 
-const randomName = faker.person.firstName(); // Idella
-const randomEmail = faker.internet.email(); // jordane_block@example.com
+const randomName = dataFaker.person.firstName(); // Idella
+const randomEmail = dataFaker.internet.email(); // jordane_block@example.com
 ```
 
 ### Documentation
@@ -36,4 +39,4 @@ Please make sure to read the [**Contributing Guide**](./CONTRIBUTING.md) before 
 
 ## License
 
-This project is [MIT licensed](https://opensource.org/licenses/MIT).
+This project is [MIT licensed](./LICENSE).
