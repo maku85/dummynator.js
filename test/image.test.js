@@ -1,16 +1,16 @@
 const { expect } = require('chai');
 
-const dataFaker = require('..');
+const dummy = require('..');
 
 describe('The image generator', () => {
   it('gives random image', () => {
-    const res = dataFaker.image.image();
+    const res = dummy.image.image();
     console.log({ res });
     expect(res).to.be.not.undefined;
   });
 
   it('gives random nature image', () => {
-    const res = dataFaker.image.image({ category: 'nature' });
+    const res = dummy.image.image({ category: 'nature' });
     console.log({ res });
     expect(res).to.be.not.undefined;
   });

@@ -1,76 +1,76 @@
 const { expect } = require('chai');
 
-const dataFaker = require('..');
+const dummy = require('..');
 
 describe('The address generator', () => {
   it('generates random phone', () => {
-    const res = dataFaker.location.phone();
+    const res = dummy.location.phone();
     console.log({ res });
     expect(res).to.be.not.undefined;
   });
 
   it('generates random streetPrefix', () => {
-    const res = dataFaker.location.streetPrefix();
+    const res = dummy.location.streetPrefix();
     console.log({ res });
     expect(res).to.be.not.undefined;
   });
 
   it('generates random streetName', () => {
-    const res = dataFaker.location.streetName();
+    const res = dummy.location.streetName();
     console.log({ res });
     expect(res).to.be.not.undefined;
   });
 
   it('generates random streetAddress', () => {
-    const res = dataFaker.location.streetAddress();
+    const res = dummy.location.streetAddress();
     console.log({ res });
     expect(res).to.be.not.undefined;
   });
 
   it('generates random city', () => {
-    const res = dataFaker.location.city();
+    const res = dummy.location.city();
     console.log({ res });
     expect(res).to.be.not.undefined;
   });
 
   it('generates random postalCode', () => {
-    const res = dataFaker.location.postalCode();
+    const res = dummy.location.postalCode();
     console.log({ res });
     expect(res).to.be.not.undefined;
   });
 
   it('generates random county', () => {
-    const res = dataFaker.location.county();
+    const res = dummy.location.county();
     console.log({ res });
     expect(res).to.be.not.undefined;
   });
 
   it('gives random country', () => {
-    const res = dataFaker.location.country();
+    const res = dummy.location.country();
     console.log({ res });
     expect(res).to.be.not.undefined;
   });
 
   it('gives random countryCode', () => {
-    const res = dataFaker.location.countryCode();
+    const res = dummy.location.countryCode();
     console.log({ res });
     expect(res).to.be.not.undefined;
   });
 
   it('gives random state', () => {
-    const res = dataFaker.location.state();
+    const res = dummy.location.state();
     console.log({ res });
     expect(res).to.be.not.undefined;
   });
 
   it('gives random stateAbbr', () => {
-    const res = dataFaker.location.stateAbbr();
+    const res = dummy.location.stateAbbr();
     console.log({ res });
     expect(res).to.be.not.undefined;
   });
 
   it('gives random timeZone', () => {
-    const res = dataFaker.location.timeZone();
+    const res = dummy.location.timeZone();
     console.log({ res });
     expect(res).to.be.not.undefined;
   });

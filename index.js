@@ -1,5 +1,5 @@
-const DataFaker = require('./lib');
+const Dummynator = require('./lib');
 
-const faker = new DataFaker();
-faker.locale = 'en';
-module.exports = faker;
+const dummy = new Dummynator();
+dummy.locale = 'en';
+module.exports = dummy;

@@ -1,64 +1,64 @@
 const { expect } = require('chai');
 
-const dataFaker = require('..');
+const dummy = require('..');
 
 describe('The commerce generator', () => {
   it('gives random currency', () => {
-    const res = dataFaker.commerce.currency();
+    const res = dummy.commerce.currency();
     console.log({ res });
     expect(res).to.be.not.undefined;
   });
 
   it('gives random currencyCode', () => {
-    const res = dataFaker.commerce.currencyCode();
+    const res = dummy.commerce.currencyCode();
     console.log({ res });
     expect(res).to.be.not.undefined;
   });
 
   it('gives random currencySymbol', () => {
-    const res = dataFaker.commerce.currencySymbol();
+    const res = dummy.commerce.currencySymbol();
     console.log({ res });
     expect(res).to.be.not.undefined;
   });
 
   it('generates random creditCardType', () => {
-    const res = dataFaker.commerce.creditCardType();
+    const res = dummy.commerce.creditCardType();
     console.log({ res });
     expect(res).to.be.not.undefined;
   });
 
   it('generates random creditCardNumber', () => {
-    const res = dataFaker.commerce.creditCardNumber();
+    const res = dummy.commerce.creditCardNumber();
     console.log({ res });
     expect(res).to.be.not.undefined;
   });
 
   it('generates random provider creditCardNumber', () => {
-    const res = dataFaker.commerce.creditCardNumber('visa');
+    const res = dummy.commerce.creditCardNumber('visa');
     console.log({ res });
     expect(res).to.be.not.undefined;
   });
 
   it('generates random creditCardCVV', () => {
-    const res = dataFaker.commerce.creditCardCVV();
+    const res = dummy.commerce.creditCardCVV();
     console.log({ res });
     expect(res).to.be.not.undefined;
   });
 
   it('generates random iban', () => {
-    const res = dataFaker.commerce.iban();
+    const res = dummy.commerce.iban();
     console.log({ res });
     expect(res).to.be.not.undefined;
   });
 
   it('generates random IT iban', () => {
-    const res = dataFaker.commerce.iban(false, 'IT');
+    const res = dummy.commerce.iban(false, 'IT');
     console.log({ res });
     expect(res).to.be.not.undefined;
   });
 
   it('generates random bic', () => {
-    const res = dataFaker.commerce.bic();
+    const res = dummy.commerce.bic();
     console.log({ res });
     expect(res).to.be.not.undefined;
   });

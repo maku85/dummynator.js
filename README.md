@@ -1,8 +1,8 @@
-# Fake data generator
+# Dummynator.js
 
-[![npm version](https://img.shields.io/npm/v/fake-data-generator.svg?style=flat-square)](https://www.npmjs.org/package/fake-data-generator) [![npm downloads](https://img.shields.io/npm/dm/fake-data-generator.svg?style=flat-square)](http://npm-stat.com/charts.html?package=fake-data-generator)
+[![npm version](https://img.shields.io/npm/v/dummynator.svg?style=flat-square)](https://www.npmjs.org/package/dummynator) [![npm downloads](https://img.shields.io/npm/dm/dummynator.svg?style=flat-square)](http://npm-stat.com/charts.html?package=dummynator)
 
-Simple JavaScript tool to generate fake data useful for testing.
+Simple JavaScript tool to generate dummy data useful for testing.
 
 <blockquote >This project is still a WIP</blockquote>
 
@@ -11,16 +11,16 @@ Simple JavaScript tool to generate fake data useful for testing.
 Using npm:
 
 ```bash
-npm install fake-data-generator
+npm install dummynator
 ```
 
 ### Usage
 
 ```js
-const dataFaker = require('fake-data-generator');
+const dummy = require('dummynator');
 
-const randomName = dataFaker.person.firstName(); // Idella
-const randomEmail = dataFaker.internet.email(); // jordane_block@example.com
+const randomName = dummy.person.firstName(); // Idella
+const randomEmail = dummy.internet.email(); // jordane_block@example.com
 ```
 
 ### Documentation
