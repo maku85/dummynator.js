@@ -1,3 +1,5 @@
 const DataFaker = require('./lib');
 
-module.exports = (opts) => new DataFaker(opts);
+const faker = new DataFaker();
+faker.locale = 'en';
+module.exports = faker;
