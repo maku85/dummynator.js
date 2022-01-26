@@ -1,7 +1,7 @@
 {
-  "name": "fake-data-generator",
+  "name": "dummynator",
   "version": "0.0.1",
-  "description": "Fake data gerator",
+  "description": "Dummy data gerator",
   "main": "index.js",
   "scripts": {
     "commit": "cz",
