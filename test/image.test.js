@@ -1,18 +1,16 @@
 const { expect } = require('chai');
 
-const DataFaker = require('../lib');
+const dataFaker = require('..');
 
-const faker = new DataFaker();
-
-describe('The faker image generator', () => {
+describe('The image generator', () => {
   it('gives random image', () => {
-    const res = faker.image.image();
+    const res = dataFaker.image.image();
     console.log({ res });
     expect(res).to.be.not.undefined;
   });
 
   it('gives random nature image', () => {
-    const res = faker.image.image({ category: 'nature' });
+    const res = dataFaker.image.image({ category: 'nature' });
     console.log({ res });
     expect(res).to.be.not.undefined;
   });
