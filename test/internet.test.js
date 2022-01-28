@@ -45,6 +45,18 @@ describe('The internet generator', () => {
     expect(res).to.be.not.undefined;
   });
 
+  it('generates random fileExtension', () => {
+    const res = dummy.internet.fileExtension();
+    console.log({ res });
+    expect(res).to.be.not.undefined;
+  });
+
+  it('generates random image fileExtension', () => {
+    const res = dummy.internet.fileExtension('image');
+    console.log({ res });
+    expect(res).to.be.not.undefined;
+  });
+
   it('generates random hex color', () => {
     const res = dummy.internet.color();
     console.log({ res });

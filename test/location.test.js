@@ -10,6 +10,7 @@ describe('The address generator', () => {
   });
 
   it('generates random streetPrefix', () => {
+    dummy.locale = 'fr';
     const res = dummy.location.streetPrefix();
     console.log({ res });
     expect(res).to.be.not.undefined;
