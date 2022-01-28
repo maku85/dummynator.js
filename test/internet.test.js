@@ -44,4 +44,16 @@ describe('The internet generator', () => {
     console.log({ res });
     expect(res).to.be.not.undefined;
   });
+
+  it('generates random hex color', () => {
+    const res = dummy.internet.color();
+    console.log({ res });
+    expect(res).to.be.not.undefined;
+  });
+
+  it('generates random rgb color', () => {
+    const res = dummy.internet.color('rgb');
+    console.log({ res });
+    expect(res).to.be.not.undefined;
+  });
 });
