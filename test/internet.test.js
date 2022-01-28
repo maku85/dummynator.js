@@ -20,4 +20,16 @@ describe('The internet generator', () => {
     console.log({ res });
     expect(res).to.be.not.undefined;
   });
+
+  it('generates random ip', () => {
+    const res = dummy.internet.ip();
+    console.log({ res });
+    expect(res).to.be.not.undefined;
+  });
+
+  it('generates random ipv6', () => {
+    const res = dummy.internet.ip(6);
+    console.log({ res });
+    expect(res).to.be.not.undefined;
+  });
 });

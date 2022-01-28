@@ -70,11 +70,13 @@ Use this functions to generate fake random data
 
 ### Internet data
 
-| Function                    | Description               | Sample result              |
-| --------------------------- | ------------------------- | -------------------------- |
-| `dummy.internet.email()`    | Generate an email address | "jerel_feeney@example.net" |
-| `dummy.internet.url()`      | Generate an url           | "http://alice.org"         |
-| `dummy.internet.userName()` | Generate a username       | "simone.dooley"            |
+| Function                    | Description               | Sample result                             |
+| --------------------------- | ------------------------- | ----------------------------------------- |
+| `dummy.internet.email()`    | Generate an email address | "jerel_feeney@example.net"                |
+| `dummy.internet.url()`      | Generate an url           | "http://alice.org"                        |
+| `dummy.internet.userName()` | Generate a username       | "simone.dooley"                           |
+| `dummy.internet.ip()`       | Generate a IPv4 address   | "31.57.31.113"                            |
+| `dummy.internet.ip(6)`      | Generate a IPv6 address   | "4374:2f4d:baf8:2c0f:0dba:f6f0:c164:b05a" |
 
 ### Lorem
 
