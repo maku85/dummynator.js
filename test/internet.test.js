@@ -32,4 +32,16 @@ describe('The internet generator', () => {
     console.log({ res });
     expect(res).to.be.not.undefined;
   });
+
+  it('generates random mimeType', () => {
+    const res = dummy.internet.mimeType();
+    console.log({ res });
+    expect(res).to.be.not.undefined;
+  });
+
+  it('generates random image mimeType', () => {
+    const res = dummy.internet.mimeType('image');
+    console.log({ res });
+    expect(res).to.be.not.undefined;
+  });
 });
