@@ -25,18 +25,18 @@ const randomEmail = dummy.internet.email(); // jordane_block@example.com
 
 ### Documentation
 
-You can find the documentation [here](./DOCUMENTATION.md).
+You can find the documentation [here](https://github.com/maku85/dummynator.js/blob/main/DOCUMENTATION.md).
 
 ## Issues
 
-Please make sure to read the [Issue Reporting Checklist](./CONTRIBUTING.md#issue-reporting-guidelines) before opening an issue. Issues not conforming to the guidelines may be closed immediately.
+Please make sure to read the [Issue Reporting Checklist](https://github.com/maku85/dummynator.js/blob/main/CONTRIBUTING.md#issue-reporting-guidelines) before opening an issue. Issues not conforming to the guidelines may be closed immediately.
 
 ## Contribution
 
 Feel free to open an issue if you encounter any issues or would like some new feature to be implemented.
 
-Please make sure to read the [**Contributing Guide**](./CONTRIBUTING.md) before making a pull request.
+Please make sure to read the [**Contributing Guide**](https://github.com/maku85/dummynator.js/blob/main/CONTRIBUTING.md) before making a pull request.
 
 ## License
 
-This project is [MIT licensed](./LICENSE).
+This project is [MIT licensed](https://github.com/maku85/dummynator.js/blob/main/LICENSE).
