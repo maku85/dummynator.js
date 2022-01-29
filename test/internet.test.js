@@ -33,6 +33,30 @@ describe('The internet generator', () => {
     expect(res).to.be.not.undefined;
   });
 
+  it('generates random userAgent', () => {
+    const res = dummy.internet.userAgent();
+    console.log({ res });
+    expect(res).to.be.not.undefined;
+  });
+
+  it('generates random userAgent by browser', () => {
+    const res = dummy.internet.userAgent({ browser: 'firefox' });
+    console.log({ res });
+    expect(res).to.be.not.undefined;
+  });
+
+  it('generates random userAgent by os', () => {
+    const res = dummy.internet.userAgent({ os: 'linux' });
+    console.log({ res });
+    expect(res).to.be.not.undefined;
+  });
+
+  it('generates random userAgent by device', () => {
+    const res = dummy.internet.userAgent({ device: 'mobile' });
+    console.log({ res });
+    expect(res).to.be.not.undefined;
+  });
+
   it('generates random mimeType', () => {
     const res = dummy.internet.mimeType();
     console.log({ res });
