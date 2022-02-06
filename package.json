@@ -3,12 +3,25 @@
   "version": "0.0.4",
   "description": "Dummy data gerator",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:maku85/dummynator.js.git"
+  },
   "scripts": {
     "commit": "cz",
     "release": "standard-version",
-    "test": "mocha --timeout 5000 './{,!(node_modules)/**/}*.test.js' --exit"
+    "test": "mocha --timeout 5000 './{,!(node_modules)/**/}*.test.js' --exit",
+    "coverage": "nyc report"
   },
-  "keywords": [],
+  "keywords": [
+    "javascript",
+    "open-source",
+    "data-generation",
+    "data-generator",
+    "fake-data",
+    "faker-generator",
+    "fake-data-generator"
+  ],
   "author": "maku",
   "license": "ISC",
   "devDependencies": {
@@ -21,6 +34,7 @@
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-prettier": "^4.0.0",
     "mocha": "^9.1.4",
+    "nyc": "^15.1.0",
     "prettier": "^2.5.1",
     "standard-version": "^9.3.2"
   },
@@ -28,5 +42,23 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "nyc": {
+    "all": false,
+    "include": [
+      "lib/**/*.js"
+    ],
+    "exclude": [
+      "lib/utilities",
+      "node_modules",
+      "reports",
+      "tests"
+    ],
+    "reporter": [
+      "html",
+      "lcov",
+      "clover"
+    ],
+    "report-dir": "./reports/coverage"
   }
 }
