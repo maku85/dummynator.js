@@ -17,13 +17,13 @@ console.log(dummy.person.firstName()); // Andreas
 
 #### Available localizations:
 
-| Code    | Language/Country  | Usage                      |
-| ------- | ----------------- | -------------------------- |
-| default | English (default) | `dummy();`                 |
-| de      | German            | `dummy({ locale: "de" });` |
-| es      | Spanish           | `dummy({ locale: "es" });` |
-| fr      | French            | `dummy({ locale: "fr" });` |
-| it      | Italian           | `dummy({ locale: "it" });` |
+| Code    | Language/Country  |
+| ------- | ----------------- |
+| default | English (default) |
+| de      | German            |
+| es      | Spanish           |
+| fr      | French            |
+| it      | Italian           |
 
 ## Generators
 
@@ -31,18 +31,16 @@ Use this functions to generate fake random data
 
 ### Person
 
-| Function                           | Description                  | Sample result           |
-| ---------------------------------- | ---------------------------- | ----------------------- |
-| `dummy.person.firstName()`         | Generate a first name        | "Daija"                 |
-| `dummy.person.firstName('female')` | Generate a female first name | "Angel"                 |
-| `dummy.person.firstName('male')`   | Generate a male first name   | "Dwayne"                |
-| `dummy.person.gender()`            | Give a non-binary gender     | "Neither"               |
-| `dummy.person.gender(true)`        | Give a binary gender         | "Female"                |
-| `dummy.person.jobTitle()`          | Generate a job title         | "Future Identity Agent" |
-| `dummy.person.lastName()`          | Generate a last name         | "Graham"                |
-| `dummy.person.title()`             | Generate a title             | "Dr."                   |
-| `dummy.person.title('female')`     | Generate a female title      | "Miss"                  |
-| `dummy.person.title('male')`       | Generate a male title        | "Ms."                   |
+| Function                         | Description                           | Sample result           |
+| -------------------------------- | ------------------------------------- | ----------------------- |
+| `dummy.person.firstName()`       | Generate a first name                 | "Daija"                 |
+| `dummy.person.firstName(gender)` | Generate a specific gender first name | Gender first name       |
+| `dummy.person.gender()`          | Give a non-binary gender              | "Neither"               |
+| `dummy.person.gender(true)`      | Give a binary gender                  | "Female"                |
+| `dummy.person.jobTitle()`        | Generate a job title                  | "Future Identity Agent" |
+| `dummy.person.lastName()`        | Generate a last name                  | "Graham"                |
+| `dummy.person.title()`           | Generate a title                      | "Dr."                   |
+| `dummy.person.title(gender)`     | Generate a specific gender title      | Gender titlte           |
 
 ### Location
 
@@ -70,23 +68,23 @@ Use this functions to generate fake random data
 
 ### Internet data
 
-| Function                                          | Description                                                                                                                                                                       | Sample result                                                                                                                         |
-| ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| `dummy.internet.email()`                          | Generate an email address                                                                                                                                                         | "jerel_feeney@example.net"                                                                                                            |
-| `dummy.internet.url()`                            | Generate an url                                                                                                                                                                   | "http://alice.org"                                                                                                                    |
-| `dummy.internet.userName()`                       | Generate a username                                                                                                                                                               | "simone.dooley"                                                                                                                       |
-| `dummy.internet.ip()`                             | Generate a IPv4 address                                                                                                                                                           | "31.57.31.113"                                                                                                                        |
-| `dummy.internet.ip(6)`                            | Generate a IPv6 address                                                                                                                                                           | "4374:2f4d:baf8:2c0f:0dba:f6f0:c164:b05a"                                                                                             |
-| `dummy.internet.userAgent()`                      | Give a user agent                                                                                                                                                                 | "Mozilla/5.0 (Windows NT 10.0; WOW64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36 OPR/83.0.4254.16" |
-| `dummy.internet.userAgent({ broswer: 'firefox'})` | Give a browser specific user agent [`chrome`, `firefox`, `safari`, `internet-explorer-8`, `internet-explorer-9`, `internet-explorer-10`, `internet-explorer-11`, `edge`, `opera`] | "Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0"                                                        |
-| `dummy.internet.userAgent({ os: 'linux'})`        | Give a os specific user agent [`linux`, `macOS`, `windows-10`, `windows-9`, `windows-8`, `windows-8.1`, `windows-7`, `windows-vista`, `windows-xp`, `android`]                    | "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:96.0) Gecko/20100101 Firefox/96.0"                                                          |
-| `dummy.internet.userAgent({ device: 'mobile'})`   | Give a device specific user agent [`mobile`, `desktop`]                                                                                                                           | "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.98 Mobile Safari/537.36"                     |
-| `dummy.internet.mimeType()`                       | Give a MIME type                                                                                                                                                                  | "application/vnd.oasis.opendocument.spreadsheet"                                                                                      |
-| `dummy.internet.mimeType('image')`                | Give a specific MIME type                                                                                                                                                         | "image/svg+xml"                                                                                                                       |
-| `dummy.internet.fileExtension()`                  | Give a file extension                                                                                                                                                             | "epub"                                                                                                                                |
-| `dummy.internet.fileExtension('image')`           | Give a specific file extension                                                                                                                                                    | "jpeg"                                                                                                                                |
-| `dummy.internet.color()`                          | Generate a hex color                                                                                                                                                              | "#e3509d"                                                                                                                             |
-| `dummy.internet.color('rgb')`                     | Generate a RGB color                                                                                                                                                              | [ 254, 248, 147 ]                                                                                                                     |
+| Function                                 | Description                                                                                                                                                                       | Sample result                                                                                                                         |
+| ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| `dummy.internet.email()`                 | Generate an email address                                                                                                                                                         | "jerel_feeney@example.net"                                                                                                            |
+| `dummy.internet.url()`                   | Generate an url                                                                                                                                                                   | "http://alice.org"                                                                                                                    |
+| `dummy.internet.userName()`              | Generate a username                                                                                                                                                               | "simone.dooley"                                                                                                                       |
+| `dummy.internet.ip()`                    | Generate a IPv4 address                                                                                                                                                           | "31.57.31.113"                                                                                                                        |
+| `dummy.internet.ip(6)`                   | Generate a IPv6 address                                                                                                                                                           | "4374:2f4d:baf8:2c0f:0dba:f6f0:c164:b05a"                                                                                             |
+| `dummy.internet.userAgent()`             | Give a user agent                                                                                                                                                                 | "Mozilla/5.0 (Windows NT 10.0; WOW64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36 OPR/83.0.4254.16" |
+| `dummy.internet.userAgent({ broswer})`   | Give a browser specific user agent [`chrome`, `firefox`, `safari`, `internet-explorer-8`, `internet-explorer-9`, `internet-explorer-10`, `internet-explorer-11`, `edge`, `opera`] | "Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0"                                                        |
+| `dummy.internet.userAgent({ os})`        | Give a os specific user agent [`linux`, `macOS`, `windows-10`, `windows-9`, `windows-8`, `windows-8.1`, `windows-7`, `windows-vista`, `windows-xp`, `android`]                    | "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:96.0) Gecko/20100101 Firefox/96.0"                                                          |
+| `dummy.internet.userAgent({ device})`    | Give a device specific user agent [`mobile`, `desktop`]                                                                                                                           | "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.98 Mobile Safari/537.36"                     |
+| `dummy.internet.mimeType()`              | Give a MIME type                                                                                                                                                                  | "application/vnd.oasis.opendocument.spreadsheet"                                                                                      |
+| `dummy.internet.mimeType(type)`          | Give a specific MIME type                                                                                                                                                         | "image/svg+xml"                                                                                                                       |
+| `dummy.internet.fileExtension()`         | Give a file extension                                                                                                                                                             | "epub"                                                                                                                                |
+| `dummy.internet.fileExtension(fileType)` | Give a specific file type extension                                                                                                                                               | "jpeg"                                                                                                                                |
+| `dummy.internet.color()`                 | Generate a hex color                                                                                                                                                              | "#e3509d"                                                                                                                             |
+| `dummy.internet.color('rgb')`            | Generate a RGB color                                                                                                                                                              | [ 254, 248, 147 ]                                                                                                                     |
 
 ### Lorem
 
@@ -108,3 +106,13 @@ Use this functions to generate fake random data
 | `dummy.date.month()`                | Give a month name                 | "September"   |
 | `dummy.date.past(years, refDate)`   | Generate a date in the past       | Date          |
 | `dummy.date.weekday()`              | Give a weekday name               | "Sunday"      |
+
+### Random
+
+| Function                                   | Description                 | Sample result |
+| ------------------------------------------ | --------------------------- | ------------- |
+| `dummy.random.number()`                    | Generate a random number    | Number        |
+| `dummy.random.boolean()`                   | Generate a random booleam   | Boolean       |
+| `dummy.random.arrayElement(array)`         | Give a random array element | Array element |
+| `dummy.random.objectElement(object)`       | Give a random object value  | Object value  |
+| `dummy.random.objectElement(object, 'key)` | Give a random object key    | Object key    |
