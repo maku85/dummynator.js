@@ -7,9 +7,13 @@
     "type": "git",
     "url": "git@github.com:maku85/dummynator.js.git"
   },
+  "homepage": "https://github.com/maku85/dummynator.js#readme",
   "scripts": {
     "commit": "cz",
     "release": "standard-version",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint:prettier": "prettier --check .",
+    "lint": "npm run lint:js && npm run lint:prettier",
     "test": "mocha --timeout 5000 './{,!(node_modules)/**/}*.test.js' --exit",
     "coverage": "nyc report"
   },

@@ -1,0 +1,6 @@
+/.git
+/.github
+/.nyc_output
+/.vscode
+/reports
+**/node_modules
