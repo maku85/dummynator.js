@@ -1,7 +1,7 @@
 {
   "name": "dummynator",
   "version": "0.0.4",
-  "description": "Dummy data gerator",
+  "description": "Dummy data generator",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -10,6 +10,9 @@
   "scripts": {
     "commit": "cz",
     "release": "standard-version",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs",
     "test": "mocha --timeout 5000 './{,!(node_modules)/**/}*.test.js' --exit",
     "coverage": "nyc report"
   },
@@ -23,7 +26,7 @@
     "fake-data-generator"
   ],
   "author": "maku",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "chai": "^4.3.4",
     "commitizen": "^4.2.4",
@@ -36,7 +39,12 @@
     "mocha": "^9.1.4",
     "nyc": "^15.1.0",
     "prettier": "^2.5.1",
-    "standard-version": "^9.3.2"
+    "standard-version": "^9.3.2",
+    "vitepress": "^0.22.2"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=7.0.0"
   },
   "config": {
     "commitizen": {

@@ -14,7 +14,7 @@ Using npm:
 npm install dummynator --save-dev
 ```
 
-### Usage
+## Usage
 
 ```js
 const dummy = require('dummynator');
@@ -23,7 +23,7 @@ const randomName = dummy.person.firstName(); // Idella
 const randomEmail = dummy.internet.email(); // jordane_block@example.com
 ```
 
-### Documentation
+## Documentation
 
 You can find the documentation [here](https://github.com/maku85/dummynator.js/blob/main/DOCUMENTATION.md).
 
