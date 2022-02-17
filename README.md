@@ -1,20 +1,20 @@
-# Dummynator.js
+<div align="center">
+<h1>Dummynator.js</h1>
+<p>Simple JavaScript tool to generate dummy data useful for testing.</p>
 
 [![npm version](https://img.shields.io/npm/v/dummynator.svg?style=flat-square)](https://www.npmjs.org/package/dummynator) [![npm downloads](https://img.shields.io/npm/dm/dummynator.svg?style=flat-square)](http://npm-stat.com/charts.html?package=dummynator)
 
-Simple JavaScript tool to generate dummy data useful for testing.
+</div>
 
-<blockquote >This project is still a WIP</blockquote>
-
-### Installation
+## Installation
 
 Using npm:
 
 ```bash
-npm install dummynator
+npm install dummynator --save-dev
 ```
 
-### Usage
+## Usage
 
 ```js
 const dummy = require('dummynator');
@@ -23,7 +23,7 @@ const randomName = dummy.person.firstName(); // Idella
 const randomEmail = dummy.internet.email(); // jordane_block@example.com
 ```
 
-### Documentation
+## Documentation
 
 You can find the documentation [here](https://github.com/maku85/dummynator.js/blob/main/DOCUMENTATION.md).
 

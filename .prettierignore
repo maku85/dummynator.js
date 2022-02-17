@@ -4,3 +4,4 @@
 /.vscode
 /reports
 **/node_modules
+CHANGELOG.md
