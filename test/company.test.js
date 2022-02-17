@@ -35,5 +35,12 @@ describe('The company generator', () => {
       expect(res).to.be.not.undefined;
       expect(res).to.be.not.null;
     });
+
+    it('gets random deparment', () => {
+      const res = dummy.company.department();
+      console.log({ res });
+      expect(res).to.be.not.undefined;
+      expect(res).to.be.not.null;
+    });
   });
 });

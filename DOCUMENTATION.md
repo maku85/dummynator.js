@@ -65,6 +65,7 @@ Use this functions to generate fake random data
 | ----------------------------- | ----------------------- | -------------------------------- |
 | `dummy.company.name()`        | Generate a company name | "Bayer Fay Inc"                  |
 | `dummy.company.catchPhrase()` | Generate a catch phrase | "Mandatory static orchestration" |
+| `dummy.company.department()`  | Give a shop department  | "Beauty"                         |
 
 ### Internet data
 
