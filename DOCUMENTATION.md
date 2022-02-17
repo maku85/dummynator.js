@@ -67,6 +67,20 @@ Use this functions to generate fake random data
 | `dummy.company.catchPhrase()` | Generate a catch phrase | "Mandatory static orchestration" |
 | `dummy.company.department()`  | Give a shop department  | "Beauty"                         |
 
+### Finance
+
+| Function                           | Description                   | Sample result                                               |
+| ---------------------------------- | ----------------------------- | ----------------------------------------------------------- |
+| `dummy.finance.currency()`         | Give a currency               | "Seychelles rupee"                                          |
+| `dummy.finance.currencyCode()`     | Give a currency code          | "AWG"                                                       |
+| `dummy.finance.currencySymbol()`   | Give a currency symbol        | "$"                                                         |
+| `dummy.finance.creditCardType()`   | Give a credit card type       | "solo"                                                      |
+| `dummy.finance.creditCardNumber()` | Generate a credit card number | "63040742115386834187557"                                   |
+| `dummy.finance.creditCardCVV()`    | Generate a credit card CVV    | "811"                                                       |
+| `dummy.finance.iban()`             | Generate an IBAN              | "IT24W480086633767L83SS653E7"                               |
+| `dummy.finance.bic()`              | Generate a BIC                | "ZWUENGS1WUW145"                                            |
+| `dummy.finance.bitcoinAddress()`   | Generate a bitcoin address    | "3RsS3tVtSroCkMuDkE4iNbB2LMKbKXtXTb1rQhpbR2BjCn4fuMCjouhN4" |
+
 ### Internet data
 
 | Function                                 | Description                                                                                                                                                                       | Sample result                                                                                                                         |
