@@ -1,17 +1,17 @@
-# Dummynator.js
+<div align="center">
+<h1>Dummynator.js</h1>
+<p>Simple JavaScript tool to generate dummy data useful for testing.</p>
 
 [![npm version](https://img.shields.io/npm/v/dummynator.svg?style=flat-square)](https://www.npmjs.org/package/dummynator) [![npm downloads](https://img.shields.io/npm/dm/dummynator.svg?style=flat-square)](http://npm-stat.com/charts.html?package=dummynator)
 
-Simple JavaScript tool to generate dummy data useful for testing.
+</div>
 
-<blockquote >This project is still a WIP</blockquote>
-
-### Installation
+## Installation
 
 Using npm:
 
 ```bash
-npm install dummynator
+npm install dummynator --save-dev
 ```
 
 ### Usage
