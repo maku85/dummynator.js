@@ -1,5 +1,7 @@
 # Getting Started
 
+Dumminator is a simple tool to generate dummy data useful for testing.
+
 ## Installation
 
 Using npm:

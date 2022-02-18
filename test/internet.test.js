@@ -10,8 +10,43 @@ describe('The internet generator', () => {
     expect(res).to.be.not.null;
   });
 
+  it('generates random email with provided first name', () => {
+    const res = dummy.internet.email('John');
+    console.log({ res });
+    expect(res).to.be.not.undefined;
+    expect(res).to.be.not.null;
+  });
+
+  it('generates random email with provided first name and last name', () => {
+    const res = dummy.internet.email('John', 'Doe');
+    console.log({ res });
+    expect(res).to.be.not.undefined;
+    expect(res).to.be.not.null;
+  });
+
+  it('generates random email with provided first name, last name and provider', () => {
+    const res = dummy.internet.email('John', 'Doe', 'google.com');
+    console.log({ res });
+    expect(res).to.be.not.undefined;
+    expect(res).to.be.not.null;
+  });
+
   it('generates random userName', () => {
     const res = dummy.internet.userName();
+    console.log({ res });
+    expect(res).to.be.not.undefined;
+    expect(res).to.be.not.null;
+  });
+
+  it('generates random userName with provided first name', () => {
+    const res = dummy.internet.userName('John');
+    console.log({ res });
+    expect(res).to.be.not.undefined;
+    expect(res).to.be.not.null;
+  });
+
+  it('generates random userName with provided first name and last name', () => {
+    const res = dummy.internet.userName('John', 'Doe');
     console.log({ res });
     expect(res).to.be.not.undefined;
     expect(res).to.be.not.null;

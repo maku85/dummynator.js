@@ -1,5 +1,40 @@
 const nav = [{ text: 'Guide', link: '/guide/' }];
 
+const sidebar = {
+  '/': [
+    {
+      text: 'Guide',
+      children: [
+        {
+          text: 'Getting Started',
+          link: '/guide/',
+        },
+      ],
+    },
+    {
+      text: 'API',
+      children: [
+        {
+          text: 'Company',
+          link: '/api/company',
+        },
+        {
+          text: 'Date',
+          link: '/api/date',
+        },
+        {
+          text: 'Finance',
+          link: '/api/finance',
+        },
+        {
+          text: 'Internet',
+          link: '/api/internet',
+        },
+      ],
+    },
+  ],
+};
+
 const description = 'A simple tool to generate dummy data useful for testing.';
 
 module.exports = {
@@ -33,5 +68,6 @@ module.exports = {
     editLinks: true,
     editLinkText: 'Suggest changes to this page',
     nav,
+    sidebar,
   },
 };
