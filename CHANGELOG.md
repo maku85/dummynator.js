@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/maku85/dummynator.js/compare/v0.0.4...v0.0.5) (2022-02-18)
+
+
+### Features
+
+* add bitcoin address generator ([b807168](https://github.com/maku85/dummynator.js/commit/b80716872c686711d1663fa0e4a17fd8e8592274))
+* add department generator ([9afe7a1](https://github.com/maku85/dummynator.js/commit/9afe7a16cef225177932f9258c1bcf4897cba533))
+* add gender locales ([ba60bce](https://github.com/maku85/dummynator.js/commit/ba60bcedc2baeb227037b4685e55f3259b7093f2))
+* add random generator ([808d759](https://github.com/maku85/dummynator.js/commit/808d75989991fdd92344144d4bf0d18a88b00cc6))
+
 ### [0.0.4](https://github.com/maku85/dummynator.js/compare/v0.0.3...v0.0.4) (2022-02-06)
 
 ### [0.0.3](https://github.com/maku85/dummynator.js/compare/v0.0.2...v0.0.3) (2022-01-29)
